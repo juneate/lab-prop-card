@@ -7,3 +7,14 @@
 
 ## Sample composition
 ![Sample image](./sample.png)
+
+
+
+
+# Properties
+## 742 Evergreen Terrace
+### Images
+### Overview
+### Rooms
+### Realtor
+

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* TYPE DEFAULTS */
+body {
+  font: 1em/1 'Roboto', helvetica, arial, sans-serif;
+  background-image: linear-gradient(#eee, #bbb);
+  color: #111;
+}
+
+/* UTILITY CLASSES */
+/* .inline-list li {
+  display: inline-block;
+} */
+.inline-list {
+  display: flex;
+}
+
+
+/* SPECIFIC CLASSES */
+.card {
+  background-color: #fff;
+  width: 90%;
+  max-width: 40em;
+  margin: 1em auto;
+}
