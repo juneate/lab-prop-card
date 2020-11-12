@@ -9,6 +9,8 @@ body {
 }
 img {
 	max-width: 100%;
+	/* display: block; */
+	vertical-align: middle;
 }
 ul {
   list-style-type: none;
