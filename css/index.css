@@ -45,12 +45,12 @@ body {
 }
 
 /* SPECIFIC CLASSES */
-.properties {
+/* .properties {
   display: flex;
   justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
-}
+} */
 
 /* 
 justify-*: horizontal (left/right)
@@ -68,7 +68,7 @@ align-*: vertical (top/bottom)
   box-shadow: 0 0 1em rgba(0,0,0,0.2);
   /* width: auto;
   max-width: 30em; */
-  width: 30em;
+  /* width: 30em; */
   margin: 1em 0.5em;
   border-radius: 0.5em;
   overflow: hidden;
@@ -108,15 +108,12 @@ align-*: vertical (top/bottom)
   content: "$";
 }
 .features {
+  display: block;
   text-transform: uppercase;
   font-weight: 700;
   order: 1;
 }
-.features > li:not(:last-child)::after {
-  content: "\2219";
-  display: inline-block;
-  margin: 0 0.5em;
-}
+/*  */
 .realtor {
   display: flex;
   line-height: 1.5;
@@ -142,11 +139,25 @@ align-*: vertical (top/bottom)
 @media screen and (min-width: 540px) {
   body {
     background-image: linear-gradient(orange, rebeccapurple);
+    font-size: 1.2em;
+  }
+  .features {
+    display: flex;
+  }
+  .features > li:not(:last-child)::after {
+    content: "\2219";
+    display: inline-block;
+    margin: 0 0.5em;
   }
 }
 /* Create one more media query */
 
-
+@media screen and (min-width: 720px) {
+  .card {
+    width: 34em;
+    margin: 0 auto;
+  }
+}
 
 /* 
 LAB 1:
