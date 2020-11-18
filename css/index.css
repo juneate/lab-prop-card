@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
 html, body {
-  height: 100%;
+  min-height: 100%;
 }
 
 
@@ -10,12 +10,10 @@ body {
   font: 300 1em/1 'Roboto', helvetica, arial, sans-serif;
   background-image: linear-gradient(#eee, #bbb);
   color: #111;
+  padding: 1em;
 }
 
 /* UTILITY CLASSES */
-/* .inline-list li {
-  display: inline-block;
-} */
 .inline-list {
   display: flex;
   justify-content: flex-start;
@@ -32,31 +30,29 @@ body {
   font-weight: 700;
   text-shadow: 0.125em 0.125em 0 rgba(0,0,0,0.8);
 }
+.btn:hover {
+  text-shadow: none;
+}
 .contact {
   padding: 1em;
 }
-
 .room {
-  /* background-color: lightgreen; */
   flex-grow: 1;
   text-align: center;
 }
 .room:first-child {
   flex-grow: 0;
-  /* background-color: gold; */
 }
-
 
 /* SPECIFIC CLASSES */
 .card {
   background-color: #fff;
   box-shadow: 0 0 1em rgba(0,0,0,0.2);
-  width: 90%;
-  max-width: 40em;
+  width: auto;
+  /* max-width: 40em; */
   margin: 1em auto;
   border-radius: 0.5em;
   overflow: hidden;
-  /* padding: 0 1em; */
 }
 .property-group {
   padding: 1em;
@@ -65,9 +61,6 @@ body {
 .property-group:last-child {
   border-bottom: none;
 }
-/* REMINDER: Remove the line from the bottom of the last element */
-
-
 .room-icon {
   height: 2em;
   margin-right: 0.5em;
@@ -82,28 +75,16 @@ body {
 }
 .cost::before {
   content: "$";
-  /* font-size: 0.5em;
-  vertical-align: middle; */
 }
-
 .features {
   text-transform: uppercase;
   font-weight: 700;
 }
-/* .features > li::after {
-  content: "\2219";
-  display: inline-block;
-  margin: 0 0.5em;
-}
-.features > li:last-child::after {
-  content: "";
-} */
 .features > li:not(:last-child)::after {
   content: "\2219";
   display: inline-block;
   margin: 0 0.5em;
 }
-
 .realtor {
   display: flex;
   line-height: 1.5;
@@ -123,6 +104,15 @@ body {
   color: inherit;
   text-decoration: none;
 }
-/* .realtor-face > img {
-  object-fit: cover;
-} */
+
+
+
+@media screen and (min-width: 540px) {
+  body {
+    background-image: linear-gradient(orange, rebeccapurple);
+  }
+}
+
+
+/* Create one more media query */
+
